@@ -6,7 +6,7 @@ defmodule CloudIServiceUdp do
 
   def project do
     [app: :cloudi_service_udp,
-     version: "2.0.3",
+     version: "2.0.4",
      language: :erlang,
      erlc_options: [
        :debug_info,
@@ -29,7 +29,7 @@ defmodule CloudIServiceUdp do
   end
 
   defp deps do
-    [{:cloudi_core, "~> 2.0.3", app: false}]
+    [{:cloudi_core, ">= 2.0.4"}]
   end
 
   defp description do
